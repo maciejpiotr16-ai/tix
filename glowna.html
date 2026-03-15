@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIX - Telewizja Xpress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset podstawowych marginesów */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Główne style strony */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a0b2e; /* Ciemno fioletowe tło */
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Klasy pomocnicze dla grubości czcionki */
+        .font-thin { font-weight: 300; }
+        .font-regular { font-weight: 400; }
+        .font-bold { font-weight: 700; }
+
+        /* Pojemnik centralny */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* Navbar i Footer */
+        nav, footer {
+            padding: 20px 0;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+        
+        nav .logo-main, footer .logo-main {
+            font-size: 1.5rem;
+        }
+
+        nav .logo-sub, footer .logo-sub {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Header */
+        header {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Efekt Frosted Glass */
+        .frosted-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .frosted-glass h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .frosted-glass p {
+            white-space: pre-line; /* Pozwala na zachowanie enterów z HTML */
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Sekcja Dołącz do nas */
+        .join-us {
+            margin: 40px 0;
+        }
+
+        .join-us h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .join-us p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Stopka spychana na dół */
+        footer {
+            margin-top: auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <span class="font-bold logo-main">TIX</span>
+            <span class="font-thin logo-sub">Telewizja Xpress</span>
+        </nav>
+
+        <header>
+            <h1 class="font-bold">Twoja ulubiona telewizja</h1>
+            <p class="font-thin">TIX (Telewizja Xpress) to telewizja internetowa, przy której pracują aktualnie 4 osoby. Zaobserwuj nas w mediach i pozwól nam się rozwinąć</p>
+        </header>
+
+        <main>
+            <section class="frosted-glass">
+                <h2 class="font-bold">Nasza ekipa</h2>
+                <p class="font-regular">Anna A. - Główny zarządca mediami społecznościowymi.
+                Aleksandra N. - Pomoc ds. zarządzania mediami społecznościowymi.
+                Alicja O. - Pomoc ds. montażu, grafiki. Monitoruje poprawność postów.
+                Maciej P. - Właściciel, montażysta, grafik.</p>
+            </section>
+
+            <section class="join-us">
+                <h2 class="font-bold">DOŁĄCZ DO NAS</h2>
+                <p class="font-thin">Chcesz pomóc nam się rozwinąć? Wejdź na @telewizjatix na Instagramie i zobacz przypięty post.</p>
+            </section>
+
+            <section class="frosted-glass">
+                <h2 class="font-bold">KONTAKT</h2>
+                <p class="font-regular">Skontaktujesz się z nami przez:
+                - DM Instagram/TikTok. 
+                - E-Mail: tvtix@onet.pl
+                
+                Skontaktujesz się z daną osobą przez:
+                - ania.tix@onet.pl
+                - aleksandra.tix@onet.pl
+                - alicja.os@onet.pl</p>
+            </section>
+        </main>
+
+        <footer>
+            <span class="font-bold logo-main">TIX</span>
+            <span class="font-thin logo-sub">Telewizja Xpress</span>
+        </footer>
+    </div>
+
+</body>
+</html>
